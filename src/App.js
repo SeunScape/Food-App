@@ -261,7 +261,7 @@ const App = () => {
           Footer
         </Typography>
         <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-          @2020 BlerixCorp. All rights reserved
+          @2020. All rights reserved
         </Typography>
       </footer>
       {/* End footer */}
