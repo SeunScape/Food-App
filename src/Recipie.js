@@ -1,5 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import './App.css';
 import clsx from 'clsx';
 import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
@@ -93,7 +94,7 @@ export default function GridItems({title, calories, image, ingredients, loading}
           </React.Fragment>
         ) : (
         <Typography variant="body2" color="textSecondary" component="p">
-          <span style={{fontWeight:"600"}}>Desription</span>:  consectetur excepteur eu occaecat. Laboris amet fugiat nulla enim non id ex amet cupidatat. Id ad quis id anim adipisicing sint sit tempor exercitation. Consequat amet elit id cillum laborum tempor Lorem aliqua tempor.
+          <span style={{fontWeight:"600"}}>For more info, click the button below</span>
         </Typography>
         )}
       </CardContent>
@@ -112,6 +113,7 @@ export default function GridItems({title, calories, image, ingredients, loading}
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
           <Typography paragraph>
+            <h2 style={{color: "e2324e"}}>Recipe:</h2>
           <ol>
             {ingredients.map(ingredient => (
               <li>{ingredient.text}</li>

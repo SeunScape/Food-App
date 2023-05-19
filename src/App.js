@@ -164,11 +164,11 @@ const App = () => {
           <Typography className={classes.title} variant="h6" noWrap>
             RECIPIE FINDER
           </Typography>
-          <div className={classes.search}>
+          {/* <div className={classes.search}> */}
             {/* <div className={classes.searchIcon}>
              
             </div> */}
-            <button onClick={handleSearchPress} style={{backgroundColor: 'transparent', color:"white", border: "none", padding: "0px 16px"}}><SearchIcon/></button>
+            {/* <button onClick={handleSearchPress} style={{backgroundColor: 'transparent', color:"white", border: "none", padding: "0px 16px"}}><SearchIcon/></button>
             <InputBase
               value={searchNav} 
               onChange={handleSearchEdit}
@@ -179,7 +179,7 @@ const App = () => {
               }}
               inputProps={{ 'aria-label': 'search' }}
             />
-          </div>
+          </div> */}
         </Toolbar>
       </AppBar>
       <div className="cover">
@@ -189,23 +189,13 @@ const App = () => {
             <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
               Recipe Finder
             </Typography>
-            <Typography variant="h5" align="center" color="textSecondary" paragraph>
-               commodo eu aute adipisicing veniam. Id ex dolor sit eu Lorem ex et tempor sunt nulla magna aute laborum dolore. Labore dolore dolor mollit ullamco ea veniam cupidatat duis.
+            <Typography variant="h5" align="center" color="textSecondary" paragraph sm-paragraph>
+            <div className='sd-paragraph'>A search engine to discover your favorite foods and dishes. Find the image, recipe, and calorie information for various foods.</div>
             </Typography>
             <form className="example" onSubmit={handleSearchClick}>
               <input type="text" placeholder="Search.." name="search" className="search-bar" value={search} onChange={handleSearchChange}/>
               <button type="submit"><i className="fa fa-search"/></button>
             </form>
-
-            {/* <div className={classes.heroButtons}>
-              <Grid container spacing={2} justify="center">
-                <Grid item>
-                  <Button variant="contained" style={{color:"#fff", backgroundColor:"#333", borderColor:"#333"}}>
-                    Main call to action
-                  </Button>
-                </Grid>
-              </Grid>
-            </div>  */}
           </Container>
         </div>
         </div>
@@ -232,27 +222,6 @@ const App = () => {
                 </div>
 
                 </div>
-                {/* <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-300 to-blue-400"></div>
-
-  <div className="w-64 bg-white rounded shadow-2xl">
-
-    <div className="h-32 bg-gray-200 rounded-tr rounded-tl animate-pulse" />
-    <div className="p-5">
-
-      <div className="h-6 rounded-sm bg-gray-200 animate-pulse mb-4" />
-
-      <div className="grid grid-cols-4 gap-1">
-        <div className="col-span-3 h-4 rounded-sm bg-gray-200 animate-pulse" />
-        <div className="h-4 rounded-sm bg-gray-200 animate-pulse" />
-        <div className="col-span-2 h-4 rounded-sm bg-gray-200 animate-pulse" />
-        <div className="col-span-2 h-4 rounded-sm bg-gray-200 animate-pulse" />
-        <div className="h-4 rounded-sm bg-gray-200 animate-pulse" />
-        <div className="col-span-3 h-4 rounded-sm bg-gray-200 animate-pulse" />
-        <div className="col-span-2 h-4 rounded-sm bg-gray-200 animate-pulse" />
-        <div className="h-4 rounded-sm bg-gray-200 animate-pulse" />
-    </div>
-  </div>
-</div> */}
 
       </main>
       {/* Footer */}
@@ -261,7 +230,7 @@ const App = () => {
           Footer
         </Typography>
         <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-          @2020. All rights reserved
+          All rights reserved
         </Typography>
       </footer>
       {/* End footer */}
