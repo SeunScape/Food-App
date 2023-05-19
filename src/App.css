@@ -77,8 +77,11 @@ form.example::after {
         color: rgba(0, 0, 0, 0.87);
       }
     }
-    @media (max-width: 600px){
-.makeStyles-title-3 {
-    display: block !important;
-}
-    }
+    /* @media (max-width: 600px){ */
+      @media (max-width:600px) {
+        .makeStyles-title-3 {
+          display: block !important;
+        }
+      }
+
+    

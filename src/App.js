@@ -1,27 +1,13 @@
 import React, { useEffect, useState} from 'react';
 import './App.css'
 import axios from 'axios';
-import Recipie from "./Recipie";
 import GridItems from './Recipie';
 import AppBar from '@material-ui/core/AppBar';
-import IconButton from '@material-ui/core/IconButton';
-import InputBase from '@material-ui/core/InputBase';
 import { fade} from '@material-ui/core/styles';
-import MenuIcon from '@material-ui/icons/Menu';
-import SearchIcon from '@material-ui/icons/Search';
-import Button from '@material-ui/core/Button';
-import CameraIcon from '@material-ui/icons/PhotoCamera';
-import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import Grid from '@material-ui/core/Grid';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-import Link from '@material-ui/core/Link';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -161,25 +147,9 @@ const App = () => {
         <div>
           <AppBar position="sticky">
         <Toolbar className={classes.bcolor}>
-          <Typography className={classes.title} variant="h6" noWrap>
+          <Typography className={classes.title} variant="h6" noWrap to>
             RECIPIE FINDER
           </Typography>
-          {/* <div className={classes.search}> */}
-            {/* <div className={classes.searchIcon}>
-             
-            </div> */}
-            {/* <button onClick={handleSearchPress} style={{backgroundColor: 'transparent', color:"white", border: "none", padding: "0px 16px"}}><SearchIcon/></button>
-            <InputBase
-              value={searchNav} 
-              onChange={handleSearchEdit}
-              placeholder="Search…"
-              classes={{
-                root: classes.inputRoot,
-                input: classes.inputInput,
-              }}
-              inputProps={{ 'aria-label': 'search' }}
-            />
-          </div> */}
         </Toolbar>
       </AppBar>
       <div className="cover">
